@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'omniauth/class_link/version'
+require 'omniauth/classlink/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "omniauth-classlink"
-  gem.version       = Omniauth::ClassLink::VERSION
+  gem.version       = Omniauth::Classlink::VERSION
   gem.authors       = ["Kamil Bednarz"]
   gem.email         = ["kamil.bednarz@u2i.com"]
-  gem.description   = %q{Unofficial OmniAuth strategy for ClassLink SSO OAuth2 integration}
+  gem.description   = %q{Unofficial OmniAuth strategy for Classlink SSO OAuth2 integration}
   gem.summary       = %q{The unofficial strategy for authenticating users using launchpad.classlink.com using OAuth2 provider}
   gem.homepage      = "https://github.com/u2i/omniauth-classlink"
   gem.license       = 'Apache2'

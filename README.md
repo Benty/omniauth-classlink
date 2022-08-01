@@ -1,7 +1,7 @@
 [![Gem Version](https://badge.fury.io/rb/omniauth-classlink.svg)](https://badge.fury.io/rb/omniauth-classlink)
 
-# OmniAuth ClassLink
-Unofficial OmniAuth strategy for [ClassLink](https://classlink.com) integration.
+# OmniAuth Classlink
+Unofficial OmniAuth strategy for [Classlink](https://classlink.com) integration.
 
 # Installation
 
@@ -18,21 +18,21 @@ $ bundle
 
 # Usage
 
-First, you need to have your OAuth2 application registered in ClassLink. After creating one, you'll be provided with access key and secret that should be used for configuring the gem.
+First, you need to have your OAuth2 application registered in Classlink. After creating one, you'll be provided with access key and secret that should be used for configuring the gem.
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :class_link, 'your-classlink-access-key', 'your-classlink-secret', strategy_class: 'OmniAuth::Strategies::ClassLink'
+  provider :classlink, 'your-classlink-access-key', 'your-classlink-secret', strategy_class: 'OmniAuth::Strategies::Classlink'
 end
 ```
 
 Or, alternatively, if you use [Devise](https://github.com/plataformatec/devise), you can put this in the `Devise.setup` section:
 
 ```ruby
- config.omniauth :class_link,
+ config.omniauth :classlink,
                  'your-classlink-access-key',
                  'your-classlink-secret',
-                 strategy_class: 'OmniAuth::Strategies::ClassLink'
+                 strategy_class: 'OmniAuth::Strategies::Classlink'
 ```
 
 # Contributing
