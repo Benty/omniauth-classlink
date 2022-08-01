@@ -3,7 +3,7 @@ require 'base64'
 
 module OmniAuth
   module Strategies
-    class ClassLink < OmniAuth::Strategies::OAuth2
+    class Classlink < OmniAuth::Strategies::OAuth2
       option :name, :classlink
       option :client_options, {
         site:          'https://launchpad.classlink.com',
@@ -28,9 +28,9 @@ module OmniAuth
         {
           first_name: raw_info['FirstName'],
           last_name: raw_info['LastName'],
-          district_id: raw_info['TenantId'],
+          tenant_id: raw_info['TenantId'],
           classlink_id: raw_info['UserId'],
-          external_id: raw_info['SourcedId'],
+          sourced_id: raw_info['SourcedId'],
           role: raw_info['Role'],
           email: raw_info['Email'],
           image: raw_info['ImagePath']

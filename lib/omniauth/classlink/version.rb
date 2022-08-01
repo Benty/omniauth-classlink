@@ -1,5 +1,5 @@
 module Omniauth
-  module ClassLink
+  module Classlink
     VERSION = "0.3.1"
   end
 end
