@@ -14,7 +14,7 @@ module OmniAuth
       option :uid_field, 'UserId'
 
       uid do
-        raw_info[options.uid_field.to_s]
+        "#{raw_info["tenant_id"]}-#{raw_info["sourced_id"]}"
       end
 
       def authorize_params
